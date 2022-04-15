@@ -1,6 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import Button from '@mui/material/Button';
+
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -25,6 +27,7 @@ const IndexPage = () => (
       <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
       <Link to="/using-dsg">Go to "Using DSG"</Link>
     </p>
+    <Button variant="contained">Testing</Button>
   </Layout>
 )
 

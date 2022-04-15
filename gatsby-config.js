@@ -31,6 +31,15 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-source-google-spreadsheets",
+      options: {
+        // The `spreadsheetId` is required, it is found in the url of your document:
+        // https://docs.google.com/spreadsheets/d/<spreadsheetId>/edit#gid=0
+        spreadsheetId: "1cCqQo0kdPVKgQXG0Bpua5uDEPqLi6Y6yEOqsX344_0M",
+        credentials: require('./club-gamification-33c131bcf4db.json'),
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
